@@ -9,4 +9,9 @@ public class RandomUtils
 	{
 		return list.get(ThreadLocalRandom.current().nextInt(list.size()));
 	}
+	
+	public static <T> T chooseFrom(T[] array)
+	{
+		return array[ThreadLocalRandom.current().nextInt(array.length)];
+	}
 }
