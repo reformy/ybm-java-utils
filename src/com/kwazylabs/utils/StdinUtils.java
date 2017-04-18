@@ -13,4 +13,12 @@ public class StdinUtils
 	{
 		return reader.readLine();
 	}
+	
+	public static int readInt() throws IOException
+	{
+		String line = reader.readLine();
+		if (line.length() == 0)
+			return Integer.MAX_VALUE;
+		return Integer.parseInt(line);
+	}
 }
